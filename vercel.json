@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "name": "3d-bread",
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" }
+  ]
+}

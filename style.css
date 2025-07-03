@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #faf7f2;
+  font-family: system-ui, sans-serif;
+}
+
+#breadCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+}
+
+#info {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
