@@ -1,6 +1,14 @@
 import * as THREE from 'https://unpkg.com/three@0.159.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.159.0/examples/jsm/controls/OrbitControls.js';
 import { RoundedBoxGeometry } from 'https://unpkg.com/three@0.159.0/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { GLTFLoader } from 'https://unpkg.com/three@0.159.0/examples/jsm/loaders/GLTFLoader.js';
+
+const loader = new GLTFLoader();
+loader.load('bread.glb', gltf => {
+  const model = gltf.scene;
+  model.scale.set(2, 2, 2);
+  scene.add(model);
+});
 
 const canvas = document.getElementById('breadCanvas');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
