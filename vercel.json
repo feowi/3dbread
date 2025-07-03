@@ -1,7 +1,11 @@
 {
-  "version": 3,
-  "name": "3d-bread",
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+  "version": 2,
+  "public": true,
+  "builds": [],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
